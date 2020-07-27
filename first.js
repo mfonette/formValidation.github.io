@@ -3,13 +3,7 @@ const date = document.getElementById('date');
 var pin = document.getElementById('pin');
 var inp = document.getElementById('myInput');
 
-
-// Form Blur Event listener
-name.addEventListener('blur', validateName);
-inp.addEventListener('blur', validatePassword);
-date.addEventListener('blur', validateDate);
-pin.addEventListener('blur', validatePin);
-
+// TODO: Remove error message once field is valid
 
 // function to validate name
 function validateName() {
@@ -29,7 +23,8 @@ function validateName() {
 
 
 //  function to validate the length of the pin
-function validatePin() {  
+function validatePin() {
+    console.log(e);
    if(pin.value.length < 4){
     pin.classList.add('is-invalid');
        console.log()
@@ -63,6 +58,8 @@ pin.addEventListener('keypress', (e) => {
     }
  });
 
+
+//  TODO: try to add this to the previous keypress, one keypress event needed
  pin.addEventListener('keypress', (e) => {
      pin.type="password"
  })
@@ -106,3 +103,10 @@ function myFunction() {
 }
 
 // he said comment anything just to change the file
+// Seriously?
+
+// Form Blur Event listener
+name.addEventListener('blur', validateName);
+inp.addEventListener('blur', validatePassword);
+date.addEventListener('blur', validateDate);
+pin.addEventListener('blur', validatePin);
