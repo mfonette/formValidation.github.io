@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: black;
+    font-size: 1.5em;
+}
+form{
+    background-color: thistle;
+    margin-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 30em;
+    border: 1px solid white;
+    margin-left: 30%;
+    padding-bottom: 2em;
+}
+.form-group{
+    margin-top: 1em;
+}
