@@ -19,14 +19,14 @@
               </div> -->
             <div class="form-group">
                 <label >full name : </label>
-                <input type="text" class="form-control" id="name" placeholder="Name  ">
+                <input type="text" class="form-control" id="name" placeholder="Name" onfocus="valname()">
                 <div class="invalid-feedback">
                     Name must be between 2 and 10 characters
                 </div>
             </div>
             <div class="form-group">
                 <label for=""minlength="4">password : </label>
-                <input type="password" id="myInput" class="form-control">
+                <input type="password" id="myInput" class="form-control" onfocus="valPassword()">
                 <input type="checkbox" id="toggle-btn" onclick="myFunction()">
                 <span>see password</span>
                 <div class="invalid-feedback">
@@ -35,14 +35,14 @@
             </div>
             <div class="form-group">
                 <label for=""> date : </label>
-              <input type="text" name="date" placeholder="yyyy/mm/dd" id="date" class="form-control">
+              <input type="text" name="date" placeholder="yyyy/mm/dd" id="date" class="form-control" onfocus="valdate()"><span id="error-message"></span>
               <div class="invalid-feedback">
                  must be yyyy/mm/dd
             </div>
             </div>
             <div class="form-group">
                 <label for="">your pin: </label>
-                <input type="text" id="pin" placeholder="0000" class="form-control">
+                <input type="text" id="pin" placeholder="0000" class="form-control" onfocus="valpin()">
                 <div class="invalid-feedback">
                     Pin must be 4 numbers only
                 </div>
